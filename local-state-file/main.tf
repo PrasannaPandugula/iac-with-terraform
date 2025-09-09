@@ -10,11 +10,11 @@ terraform {
 }
 
 provider "aws" {
-  region  = "eu-north-1"
+  region  = "eu-north-1" // zone= eu-north-1d
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-000b353ad9d9ebc92" // public and verified 
   instance_type = "t3.micro"
 
   tags = {
